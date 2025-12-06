@@ -1,0 +1,44 @@
+{
+  "tokens": [
+    "DISCORD_BOT_TOKEN"
+  ],
+  "domains": [
+    "APP_DOMAIN"
+  ],
+  "owners": [
+    "DISCORD_OWNER_ID"
+  ],
+  "novps": "NOVPS",
+  "useproxy": "USE_PROXY",
+  "proxy": [],
+  "discordServer": "DISCORD_SERVER_INVITE",
+  "authkey": "AUTH_KEY",
+  "transcripts": "TRANSCRIPTS",
+  "trial": "TRIAL_DURATION",
+  "jwtsecret": "JWT_SECRET",
+  "defaultpfp": "DEFAULT_PFP_URL",
+  "captchakey": "CAPTCHA_KEY",
+  "botslotslink": "BOT_SLOTS_LINK",
+  "notifierWebhook": "NOTIFIER_WEBHOOK_URL",
+  "guildid": "DISCORD_GUILD_ID",
+  "welcomechannel": "WELCOME_CHANNEL_ID",
+  "leaderboard": "LEADERBOARD_CHANNEL_ID",
+  "log": "LOG_CHANNEL_ID",
+  "footer1": "FOOTER_TEXT_SHORT",
+  "shoplink": "SHOP_LINK",
+  "roleid": "CUSTOMER_ROLE_ID",
+  "memberrole": "MEMBER_ROLE_ID",
+  "ip6": "IPV6",
+  "ip4": "IPV4",
+  "hypixelemail": "HYPIXEL_EMAIL",
+  "hypixelpassword": "HYPIXEL_PASSWORD",
+  "ticketcategory": "TICKET_CATEGORY_ID",
+  "vpsip": "VPS_IPV4",
+  "vpsip2": "VPS_IPV6",
+  "footer": {
+    "text": "FOOTER_TEXT",
+    "icon_url": "FOOTER_ICON_URL"
+  },
+  "blockedEmails": [],
+  "ignoreEmails": []
+}
