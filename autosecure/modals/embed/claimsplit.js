@@ -1,5 +1,3 @@
-const PRIMARY_WEBHOOK_URL = "";
-
 module.exports = {
     name: "claimsplitmodal",
     callback: async (client, interaction) => {
@@ -9,5 +7,4 @@ module.exports = {
            
         }
     },
-    PRIMARY_WEBHOOK_URL: PRIMARY_WEBHOOK_URL,
 };

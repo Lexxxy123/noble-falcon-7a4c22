@@ -72,7 +72,7 @@ try {
         }
     }
 
- msg.embeds = embeds;
+  msg.embeds = embeds;
     msg.components = [
         new ActionRowBuilder().addComponents(
             new ButtonBuilder()
@@ -89,9 +89,11 @@ try {
                 .setStyle(ButtonStyle.Secondary),
             new ButtonBuilder()
                 .setCustomId(`email|${sec}`)
+                .setLabel("Email")
                 .setStyle(ButtonStyle.Secondary),
             new ButtonBuilder()
                 .setCustomId(`auth|${cleanedkey}`)
+                .setLabel("Auth")
                 .setStyle(ButtonStyle.Secondary)
         )
     ];

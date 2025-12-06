@@ -14,21 +14,39 @@ let client = null; // Discord client (set via initialize)
 
 // --- SMTP Server Setup ---
 const smtpServer = new SMTPServer({
-    logger: true, // Enable logging
-    disabledCommands: ['AUTH'], // Disable authentication (if not needed)
+    logger: true,
+    disabledCommands: ['AUTH'],
+    secure: false,
+    authOptional: true,
+    disableReverseLookup: true,
+    onConnect(session, callback) {
+        console.log(`[SMTP] New connection from ${session.remoteAddress}`);
+        callback();
+    },
+    onMailFrom(address, session, callback) {
+        console.log(`[SMTP] MAIL FROM: ${address.address}`);
+        callback();
+    },
+    onRcptTo(address, session, callback) {
+        console.log(`[SMTP] RCPT TO: ${address.address}`);
+        callback();
+    },
     onData(stream, session, callback) {
+        console.log(`[SMTP] Receiving email data...`);
         simpleParser(stream)
             .then(parsed => processIncomingEmail(parsed))
-            .then(() => callback())
+            .then(() => {
+                console.log(`[SMTP] Email processed successfully`);
+                callback();
+            })
             .catch(err => {
-                console.error('Error processing email:', err);
+                console.error('[SMTP] Error processing email:', err);
                 callback(err);
             });
     },
-    onConnect(session, callback) {
-        console.log(`New SMTP connection from ${session.remoteAddress}`);
-        callback(); // Accept the connection
-    },
+    onClose(session) {
+        console.log(`[SMTP] Connection closed from ${session.remoteAddress}`);
+    }
 });
 
 // --- Functions ---

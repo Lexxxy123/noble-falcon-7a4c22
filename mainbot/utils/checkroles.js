@@ -1,7 +1,6 @@
 const config = require("../../config.json");
 
 module.exports = async function checkroles(client) {
- // console.log(`Checking roles!`)
   const currentTime = Date.now();
   const activeLicenses = await client.queryParams(
     "SELECT * FROM usedLicenses WHERE expiry > ?",
@@ -21,7 +20,13 @@ module.exports = async function checkroles(client) {
     return;
   }
 
-  const membersWithRole = await guild.members.fetch();
+  let membersWithRole;
+  try {
+    membersWithRole = await guild.members.fetch();
+  } catch (error) {
+    console.error('[CHECKROLES] Failed to fetch members:', error.message);
+    return;
+  }
 
   for (const [userId, member] of membersWithRole) {
     const hasActiveLicense = activeLicenses.some(license => license.user_id === userId);

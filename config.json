@@ -1,43 +1,43 @@
 {
   "tokens": [
-    "DISCORD_BOT_TOKEN"
+    "MTQ0Njc4MTUyMDQ3ODk5ODYyMQ.GP18Be.G5FxAEIlYFSNjO7y5qL0Ex--PZyCPVjOsNNWKE"
   ],
   "domains": [
-    "APP_DOMAIN"
+    "moneyy.lol"
   ],
   "owners": [
-    "DISCORD_OWNER_ID"
+    "876483538877296650"
   ],
-  "novps": "NOVPS",
-  "useproxy": "USE_PROXY",
+  "novps": "false",
+  "useproxy": "false",
   "proxy": [],
-  "discordServer": "DISCORD_SERVER_INVITE",
-  "authkey": "AUTH_KEY",
-  "transcripts": "TRANSCRIPTS",
-  "trial": "TRIAL_DURATION",
-  "jwtsecret": "JWT_SECRET",
-  "defaultpfp": "DEFAULT_PFP_URL",
-  "captchakey": "CAPTCHA_KEY",
-  "botslotslink": "BOT_SLOTS_LINK",
-  "notifierWebhook": "NOTIFIER_WEBHOOK_URL",
-  "guildid": "DISCORD_GUILD_ID",
-  "welcomechannel": "WELCOME_CHANNEL_ID",
-  "leaderboard": "LEADERBOARD_CHANNEL_ID",
-  "log": "LOG_CHANNEL_ID",
+  "discordServer": "https://discord.gg/GFAWUXe5Rc",
+  "authkey": "mySecretAuthKey123456",
+  "transcripts": "1436411836340895868",
+  "trial": "24h",
+  "jwtsecret": "anotherRandomSecret789",
+  "defaultpfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XumncIqoN3PPHH5GC_BNgZyM_wsaJ_JAVgoqMNMhzdtNn3BaYbudqpA5t452wy-AvUk&usqp=CAU",
+  "captchakey": "",
+  "botslotslink": "https://example.com",
+  "notifierWebhook": "https://discord.com/api/webhooks/1442536070741889117/-Iq9S6I5cteiCrKMh6k0Pu2dL_UCKyNPDKiztBSSO1CO_xNGrAxlyzvdiH1w0b1c42_O",
+  "guildid": "1436411703280795912",
+  "welcomechannel": "1436412455306920134",
+  "leaderboard": "1436413263394115696",
+  "log": "1442404003148468294",
   "footer1": "FOOTER_TEXT_SHORT",
-  "shoplink": "SHOP_LINK",
-  "roleid": "CUSTOMER_ROLE_ID",
-  "memberrole": "MEMBER_ROLE_ID",
-  "ip6": "IPV6",
-  "ip4": "IPV4",
-  "hypixelemail": "HYPIXEL_EMAIL",
-  "hypixelpassword": "HYPIXEL_PASSWORD",
-  "ticketcategory": "TICKET_CATEGORY_ID",
-  "vpsip": "VPS_IPV4",
-  "vpsip2": "VPS_IPV6",
+  "shoplink": "https://example.com",
+  "roleid": "1446788433207885986",
+  "memberrole": "1446788433207885986",
+  "ip6": "2a02:4780:c:439a::1",
+  "ip4": "191.101.2.159",
+  "hypixelemail": "altmoneyyzob@gmail.com",
+  "hypixelpassword": "TitouanLesinge",
+  "ticketcategory": "1436416438922379295",
+  "vpsip": "191.101.2.159",
+  "vpsip2": "2a02:4780:c:439a::1",
   "footer": {
     "text": "FOOTER_TEXT",
-    "icon_url": "FOOTER_ICON_URL"
+    "icon_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XumncIqoN3PPHH5GC_BNgZyM_wsaJ_JAVgoqMNMhzdtNn3BaYbudqpA5t452wy-AvUk&usqp=CAU"
   },
   "blockedEmails": [],
   "ignoreEmails": []

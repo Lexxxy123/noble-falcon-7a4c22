@@ -26,7 +26,8 @@ async function sendAccountWebhook(acc, uid) {
 
         if (acc.newName && acc.newName !== "No Minecraft!") {
             try {
-                const skinUrl = `https://visage.surgeplay.com/bust/${acc.newName}.png?y=-40`;
+                const encodedName = encodeURIComponent(acc.newName);
+                const skinUrl = `https://visage.surgeplay.com/bust/${encodedName}.png?y=-40`;
                 embed.setThumbnail(skinUrl);
             } catch (e) {
                 console.log('[IMAGE] Failed to set thumbnail');
